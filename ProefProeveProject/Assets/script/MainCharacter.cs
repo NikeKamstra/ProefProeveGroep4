@@ -19,4 +19,9 @@ public class MainCharacter : MonoBehaviour {
 			Debug.Log("change" + Time.deltaTime);
 		}
 	}
+
+	void OnCollisionEnter2D(Collision2D other)
+	{
+		rigidbody2D.AddForce(new Vector2(0,500));
+	}
 }
